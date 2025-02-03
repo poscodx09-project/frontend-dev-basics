@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch06-dom-api" />
+        <module name="ch07-jquery" />
+        <module name="ch02-html-css-basics" />
+        <module name="ch03-box-model" />
+        <module name="ch04-text-font" />
+        <module name="ch05-css-practice" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
