@@ -1,14 +1,23 @@
 var MyMath = function(name) {
     console.log("MyObject called");
-
     this.name = name;
 };
 
-
-
 console.log("============[02.02] prototype 객체");
+console.log("prototype : " + MyMath.prototype);
+console.log("__proto__ : " + MyMath.__proto__);
+
 console.log("============[02.03] prototype.constructor");
+console.log("prototype : " + MyMath.prototype.constructor);
+
+
 console.log("============[02.04] prototype 객체 확장");
+MyMath.prototype.add = function (a,b){
+    return a + b;
+}
+console.log("prototype : " + MyMath.prototype.constructor);
+
+
 console.log("============[03.03] MyMath 생성자 함수로 생성한 일반 객체의 __proto__ 객체");
 console.log("============[03.04] 리터럴 {}로 정의한 일반 객체의 __proto__ 객체");
 console.log("============[04.01] prototype 객체 속성 접근(상속)");

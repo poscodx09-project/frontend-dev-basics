@@ -4,7 +4,22 @@
     ex) List 함수 지원하기
 
 */
+Array.prototype.remove = function (index){
+    this.splice(index,1);
+}
 
+Array.prototype.insert = function (index,value){
+    if(value instanceof Array){
+
+        value.forEach( function (element)  {
+            this.splice(index++,0,element)}
+            .bind(this));
+
+    }else{
+        this.splice(index,0,value);
+    }
+
+}
 
 
 

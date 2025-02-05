@@ -5,3 +5,14 @@
     browser: window
 */
 
+global.n = "둘리";
+console.log(global.n, n);
+
+var e = 'dooly@gmail.com';
+console.log(global.e, e);
+
+var f = function (){
+    console.log(this);
+}
+
+

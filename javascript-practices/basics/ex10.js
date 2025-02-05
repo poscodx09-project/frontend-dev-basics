@@ -16,3 +16,6 @@ console.log(
     "초: 40\n" +
     "밀리초: 1234"
 );
+var now = new Date();
+console.log(now.getDate());
+console.log(Date.now());

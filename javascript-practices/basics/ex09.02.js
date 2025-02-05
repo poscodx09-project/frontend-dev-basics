@@ -21,3 +21,9 @@ var url = "http://www.mysite.com/user?name=둘리&email=dooly@gmail.com";
 // 3. encodeURIComponent: 값만 encoding해야 하는 경우 사용(o), url 전체를 encoding 해야 하는 경우 사용(x)
 // 4. encodeURIComponent 사용 예
 // 만들어야 할 URL: http://www.mysite.com/user?name=둘리&email=dooly@gmail.com
+
+var res = encodeURI(url);
+console.log(res);
+
+var res2 = encodeURIComponent(url);
+console.log(res2);
