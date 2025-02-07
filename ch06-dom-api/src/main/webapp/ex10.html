@@ -3,6 +3,36 @@
 <head>
 	<title>ex10</title>
 	<meta charset="UTF-8">
+	<script>
+		window.onload = function (){
+			// ID
+			var header01 = document.getElementById("header-01");
+			var header02 = document.getElementById("header-02");
+
+			// Tag Name
+			var h4s = document.getElementsByTagName("h4");
+
+			// Class Name
+			var h5s = document.getElementsByClassName("header");
+
+			// css 선택자
+			var header07 = document.querySelector("#header-07");
+			var headers = document.querySelectorAll(".header2");
+
+			setTimeout(function (){
+				header01.innerHTML += ' by ElementById';
+				header02.innerHTML += ' by ElementById';
+
+				h4s[0].innerHTML += ' by ElementsByTagName';
+				h4s[1].innerHTML += ' by ElementsByTagName';
+
+
+
+				},3000);
+
+
+		}
+	</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>

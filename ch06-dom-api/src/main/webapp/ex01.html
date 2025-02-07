@@ -3,6 +3,26 @@
 <head>
 	<title>ex01</title>
 	<meta charset="UTF-8">
+	<script>
+		window.n = "둘리";
+		console.log(window.n, n );
+
+		var e = "dooly@gmail.com";
+		console.log(window.e,e);
+
+		setTimeout(function (){
+			var child = window.open('popup.html','popup','width = 600, height = 400');
+
+			setTimeout(function (){
+				child.document.write("<h1>popup contents updated</h1>")
+			},2000);
+
+			setTimeout(function (){
+				
+			},2000);
+
+		},2000);
+	</script>
 </head>
 <body>
 	<h1>BOM(Browser Object Model)</h1>
@@ -12,4 +32,4 @@
 		<li>자바스크립트 실행과 관련된 환경 정보에 접근이 가능한 객체(Environments, Variable Object)</li>		
 	</ul>
 </body>
-</html> 
+</html>
